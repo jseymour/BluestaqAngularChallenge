@@ -1,0 +1,20 @@
+<style>
+  select {
+    width:300px
+  }
+</style>
+
+
+<div *ngIf="author">
+  <h3>Ok.. so you want to read some stuff from {{author}}</h3>
+  <p>Select one of their greatest works from below:</p>
+  <select #poem (change)="update($event)">
+    <option value="default">----</option>
+    <option *ngFor="let title of data" [value]="title.title">
+      {{title.title}}
+    </option>
+  </select>
+
+</div>
+
+

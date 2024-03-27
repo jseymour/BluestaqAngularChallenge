@@ -1,0 +1,8 @@
+<h3>Select an Author from the dropdown below:</h3>
+<select #author (change)="update($event)">
+  <option value="default">----</option>
+  <option value="default">Charles Bukowski</option>
+  <option *ngFor="let author of data" [value]="author">
+    {{author}}
+  </option>
+</select>

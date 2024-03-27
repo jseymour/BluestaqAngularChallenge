@@ -1,0 +1,14 @@
+<style>
+  span {
+    display:block;
+  }
+</style>
+
+<h3 *ngIf="poem">{{poem}}</h3>
+
+<div *ngIf="data" >
+<span *ngFor="let poem of data.lines">
+  {{poem}}
+</span>
+
+</div>
