@@ -1,0 +1,2 @@
+# BluestaqAngularChallenge
+Bluestaq coding challenge
